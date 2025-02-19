@@ -1,0 +1,15 @@
+.container{
+    background-color: teal;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 960;
+    margin: 0 auto;
+
+}
+.gridSquare{
+    background-color: black;
+}
+.gridSquare:hover{
+    background-color: #fff;
+}
