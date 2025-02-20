@@ -8,5 +8,19 @@ for (let i = 0; i < 16; i++) {
         grids.style.cssText = "width: 60px; height: 60px; text-align:center; border: 1px solid white"
         grids.classList.add("gridSquare")
         divContainer.appendChild(grids)
+
+        // lets now add an eventListener
+
+        grids.addEventListener("mouseenter", ()=>{
+            grids.style.backgroundColor= getRandomColor()
+        }
+        )
     }
+}
+
+function getRandomColor(){
+    let r = Math.floor(Math.random() * 256)
+    let g = Math.floor(Math.random() * 256)
+    let b = Math.floor(Math.random() * 256)
+    return `rgb(${r},${g},${b})`
 }
