@@ -1,15 +1,24 @@
-.container{
+
+*{
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container {
     background-color: teal;
     color: white;
     display: flex;
     flex-wrap: wrap;
-    width: 960;
+    width: 960px;
     margin: 0 auto;
 
 }
-.gridSquare{
+
+.gridSquare {
     background-color: black;
 }
-.gridSquare:hover{
+
+.gridSquare:hover {
     background-color: #fff;
+    transition: background-color 0.9s ease;
 }
